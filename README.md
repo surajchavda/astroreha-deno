@@ -8,10 +8,15 @@ This package can be used in Supabase Edge Functions by providing a WebAssembly
 build of the Swiss Ephemeris. Copy your compiled `swisseph.js` and
 `swisseph.wasm` along with the `ephe` data directory into the `swisseph/`
 folder of this repository. The library will automatically load the files from
-there when required.
+there when required and no native `swisseph` dependency needs to be installed.
 
 ```shell
 npm i -S astroreha
+```
+
+```javascript
+// Deno
+import { positioner } from "npm:astroreha";
 ```
 
 1. Default House System: `Whole Sign`
