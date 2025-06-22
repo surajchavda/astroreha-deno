@@ -2,6 +2,14 @@
 
 `Doesn't work in browser environments. Please run on server`
 
+## Using with Deno
+
+This package can be used in Supabase Edge Functions by providing a WebAssembly
+build of the Swiss Ephemeris. Copy your compiled `swisseph.js` and
+`swisseph.wasm` along with the `ephe` data directory into the `swisseph/`
+folder of this repository. The library will automatically load the files from
+there when required.
+
 ```shell
 npm i -S astroreha
 ```
