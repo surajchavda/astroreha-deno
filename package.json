@@ -28,6 +28,7 @@
   "homepage": "https://github.com/rish-0-0/astroreha#readme",
   "dependencies": {
     "ephemeris": "^2.0.0",
-    "jyotish": "^1.0.1"
+    "jyotish": "^1.0.1",
+    "swisseph": "file:swisseph"
   }
 }

@@ -1,7 +1,7 @@
-const path = require("path");
-const swisseph = require("./swisseph/swisseph.js");
-const pathToSwisseph = path.join(__dirname, "swisseph");
-swisseph.swe_set_ephe_path(path.join(pathToSwisseph, "ephe"));
+const swisseph = require("swisseph");
+var pathToSwisseph = require.resolve("swisseph/package.json").split("/");
+pathToSwisseph.pop();
+swisseph.swe_set_ephe_path(pathToSwisseph.join("/") + "/ephe");
 
 module.exports.FLAG = swisseph.SEFLG_SPEED | swisseph.SEFLG_MOSEPH;
 
