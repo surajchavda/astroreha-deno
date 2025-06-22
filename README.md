@@ -6,10 +6,10 @@
 
 This package can be used in Supabase Edge Functions by providing a WebAssembly
 build of the Swiss Ephemeris. After installing the package, copy your compiled
-`swisseph.js`, `swisseph.wasm` and the `ephe` data directory into the
-`node_modules/astroreha/swisseph/` folder. The library will automatically load
-the files from there when required and no native `swisseph` dependency needs to
-be installed.
+`swisseph.wasm` **and its generated `swisseph.js` loader** together with the
+`ephe` data directory into the `node_modules/astroreha/swisseph/` folder. The
+library will automatically load the files from there when required and no
+native `swisseph` dependency needs to be installed.
 
 ```shell
 npm i -S astroreha
