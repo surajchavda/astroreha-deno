@@ -1,4 +1,4 @@
-const swisseph = require("swisseph");
+const swisseph = require("./swisseph/swisseph.js");
 const { ...constants } = require("./constants");
 const ephemeris = require("ephemeris");
 const jyotish = require("jyotish");
